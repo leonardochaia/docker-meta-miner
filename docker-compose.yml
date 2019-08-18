@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  xmrig:
+    image: lchaia/meta-miner
+    build:
+      context: ./src
+    command: --pass=WORKDER_ID:EMAIL --user=XMR_WALLET --miner="./xmrig -o 127.0.0.1:3333 -t 0 --donate-level 0 --cpu-priority 5" --pool=gulf.moneroocean.stream:10001
